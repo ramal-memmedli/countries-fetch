@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f0f2f4;
+  font-family: 'Roboto', sans-serif;
+}
+
+body header {
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  height: 5rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav ul li {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+body header nav ul li a {
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+body header nav ul li a:hover {
+  color: #7158e2;
+}
+
+body #cards {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #cards .card {
+  width: 20rem;
+  margin: 2rem 1rem;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  border-radius: 1rem;
+}
+
+body #cards .card img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+body #cards .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: #FFF;
+  border-radius: 1rem;
+}
+
+body #cards .card .card-body button {
+  padding: .6rem 1.2rem;
+  border-radius: .3rem;
+  border: none;
+  background-color: #7158e2;
+  color: #FFF;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+
+body #cards .card .card-body button:hover {
+  background-color: #7d5fff;
+}
+
+body #cards .card:hover {
+  background-color: #FFF;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body #cards .card:hover img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body .card-pop-up {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+body .card-pop-up .close-pop-up {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+body .card-pop-up .country-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  border-radius: 1rem;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  margin-bottom: 2rem;
+}
+
+body .card-pop-up .country-details img {
+  width: 20rem;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+body .card-pop-up .country-details .country-details-body {
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .card-pop-up .country-details .country-details-body .country-name-capital-population {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .card-pop-up .country-details .country-details-body .country-name-capital-population div {
+  margin-right: 1rem;
+}
+
+body .card-pop-up .country-details .country-details-body .country-name-capital-population .country-name h3 {
+  font-size: 1rem;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+body .card-pop-up .country-details .country-details-body .country-detail {
+  background-color: #FFF;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .card-pop-up .country-details .country-details-body .country-detail i {
+  margin-right: 1rem;
+}
+
+body .card-pop-up .country-details .country-details-body .country-detail .separator {
+  margin: 0 1.5rem;
+}
+
+body .card-pop-up .country-details .country-details-body .country-detail.country-capital, body .card-pop-up .country-details .country-details-body .country-detail.country-currency, body .card-pop-up .country-details .country-details-body .country-detail.country-language, body .card-pop-up .country-details .country-details-body .country-detail.country-timezone {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .card-pop-up .country-details .country-details-body .country-detail.country-capital span, body .card-pop-up .country-details .country-details-body .country-detail.country-currency span, body .card-pop-up .country-details .country-details-body .country-detail.country-language span, body .card-pop-up .country-details .country-details-body .country-detail.country-timezone span {
+  font-size: 1rem;
+}
+
+body .card-pop-up .country-details .country-details-body .country-detail.country-currency, body .card-pop-up .country-details .country-details-body .country-detail.country-language, body .card-pop-up .country-details .country-details-body .country-detail.country-timezone {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
